@@ -1,0 +1,17 @@
+# ACW config file
+# To use the calculation methods, the path to the CCP4 folder has to be set set here.
+# Enter your path below after the equals sign.
+# If you have no CCP4 installed, keep this file unchanged.
+
+
+path = 
+
+
+# Examples:
+# Windows style path, the folder that contains the bin folder and ccp4.setup.bat:
+# path = C:\CCP4-7\7.0
+# Linux style path, the folder that contains the bin folder:
+# path = /usr/local/ccp4/ccp4-7.0
+
+
+
