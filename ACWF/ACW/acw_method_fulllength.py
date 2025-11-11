@@ -113,9 +113,10 @@ def color_methods(self, method):
 
         cmd.color('atomic', 'all')
         cmd.color('green', 'elem C')
-        for x in self.cur_pdb().chain[0].resi:
-            if int(x) % 2 == 0:
-                cmd.color('orange', 'sele and elem C and resi %s'%str(x))
+        for chain in self.cur_pdb().chain:
+            for x in chain.resi:
+                if int(x) % 2 == 0:
+                    cmd.color('orange', 'sele and elem C and resi %s'%str(x))
 
     elif method == 'ramachandran__':
         

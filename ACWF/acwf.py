@@ -862,7 +862,7 @@ class AcWizardFibrilMultiSheet(Wizard):
                 for n in range(int(self.cur_pdb().protofilament)):
                     cmd.save('Sheet_%s.pdb'%n, 'sele_%s'%n)
                     protofilament = pdb_reader('Sheet_%s.pdb'%n).splice()
-
+                    self.resvrange = get_data('(bychain sele_%s) and name O ' % n, 'resv')
                     for x, name in enumerate(self.resvrange):
                         # xyz = protofilament[-1].residues()[x].center()
                         xyz = protofilament[-1].select('resi', [str(name)]).center()
