@@ -1,4 +1,4 @@
-# ACWF – Amyloid coordinate wizard fibril
+# ACWF – Amyloid Coordinate Wizard for Fibril
 
 ACWF is a Pymol plugin for finding local interfaces in amyloid fibrils, and calculating their descriptors: shape complementarity, buried surface area and surface detail index. It can be used on fibril structurres measured by cryo-EM. The plugin also serves as a database and a viewer for the amyloid fibril structures downloaded from the [PDB](https://www.rcsb.org/). 
 
